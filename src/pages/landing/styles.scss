@@ -1,7 +1,9 @@
 @import "src/theme/variables";
+@import "src/theme/color";
 
 .landing {
   @include page;
+  background-color: $dark;
 
   & > header {
     display: flex;

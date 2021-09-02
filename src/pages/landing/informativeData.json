@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Disfruta en tu TV.",
+    "description": "Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
+    "img": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+  },
+  {
+    "id": 2,
+    "title": "Descarga tus series para verlas offline.",
+    "description": "Guarda tu contenido favorito y ten siempre algo para ver.",
+    "img": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Disfruta donde quieras.",
+    "description": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
+    "img": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+  },
+  {
+    "id": 4,
+    "title": "Crea perfiles para niños.",
+    "description": "Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.",
+    "img": "https://occ-0-2976-3934.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABeLa_an51Ptz6LMzNXnM9oDvlKl4yIJQKZJRJ9fVFPpPFK5toVuo-KytXEdqPI64KCph1OKms7nLxtCsXm_CARaR50wx.png?r=8ec"
+  }
+]

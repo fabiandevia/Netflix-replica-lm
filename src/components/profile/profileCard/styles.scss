@@ -1,0 +1,25 @@
+@import "src/theme/color";
+
+$avatar-width: 200px;
+
+.profile-card {
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  > .avatar {
+    width: $avatar-width;
+    height: $avatar-width;
+    margin-bottom: 10px;
+  }
+
+  > .name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: lighten($tertiary, 25%);
+  }
+}

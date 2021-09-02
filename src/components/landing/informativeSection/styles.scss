@@ -1,0 +1,12 @@
+@import "src/theme/color";
+
+.informative-section {
+  display: flex;
+  align-items: center;
+
+  > .content {
+    > .title, > .description {
+      color: $light;
+    }
+  }
+}

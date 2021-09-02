@@ -1,0 +1,23 @@
+@import "src/theme/variables";
+
+.profile-selection {
+  @include page;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+  align-items: center;
+
+  > .title {
+    color: $light;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  > .users {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    max-width: 1200px;
+  }
+}

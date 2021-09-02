@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-const Input = ({ error, ...props }) => {
-  return (
-    <div className='input-wrapper'>
-      <input {...props} />
-      <ErrorMessage message={error} visible={!!error} />
-    </div>
-  );
-};
+const Input = forwardRef(({ error, ...props }, ref) => (
+  <div className='input-wrapper'>
+    <input {...props} ref={ref} />
+    <ErrorMessage message={error} visible />
+  </div>
+));
 
 Input.propTypes = {
   error: PropTypes.string,

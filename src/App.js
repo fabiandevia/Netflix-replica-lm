@@ -4,6 +4,8 @@ import { landing, login, profileSelection, profileUpdate, main } from './routes/
 import Landing from './pages/landing';
 import Login from './pages/login';
 import ProfileSelection from './pages/profile/profileSelection';
+import ProfileUpdate from './pages/profile/profileUpdate';
+import PrivateRoute from './components/routes/privateRoute';
 import './App.scss';
 
 function App() {
@@ -20,12 +22,12 @@ function App() {
           <Route exact path={login}>
             <Login />
           </Route>
-          <Route exact path={profileSelection}>
+          <PrivateRoute exact path={profileSelection}>
             <ProfileSelection />
-          </Route>
-          <Route exact path={profileUpdate}>
-            <ProfileSelection />
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute exact path={profileUpdate}>
+            <ProfileUpdate />
+          </PrivateRoute>
           <Route path='*'>
             <h1>404</h1>
             <h1>NOT FOUND</h1>

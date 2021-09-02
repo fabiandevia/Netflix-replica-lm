@@ -1,6 +1,9 @@
+@import "src/theme/color";
+
 @mixin page {
   min-height: 100vh;
   min-width: 100vw;
+  background-color: $secondary;
 }
 
 $border-radius: 5px;
