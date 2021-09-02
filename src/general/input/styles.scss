@@ -1,0 +1,29 @@
+@import "src/theme/color";
+@import "src/theme/variables";
+
+.input-wrapper {
+  margin-bottom: 10px;
+
+  > input {
+    background-color: $tertiary;
+    color: $light;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    border-radius: $border-radius;
+    border-bottom: $tertiary 3px solid;
+
+    &:focus {
+      border-bottom-color: $warning;
+    }
+  }
+}
+
+.error-message {
+  color: $warning;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-bottom: 5px;
+}
