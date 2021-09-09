@@ -6,6 +6,7 @@ $avatar-width: 200px;
   margin: 20px;
   cursor: pointer;
   transition: transform 0.3s linear;
+  position: relative;
 
   &:hover {
     transform: scale(1.04);
@@ -21,5 +22,16 @@ $avatar-width: 200px;
     font-size: 1.6rem;
     font-weight: 400;
     color: lighten($tertiary, 25%);
+  }
+
+  > .update-wrapper {
+    position: absolute;
+    top: 0;
+    width: $avatar-width;
+    height: $avatar-width;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

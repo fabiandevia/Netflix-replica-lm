@@ -1,0 +1,35 @@
+@import "src/theme/color";
+
+$bg-color: lighten($tertiary, 5%);
+
+.collapse {
+  margin: 7px 0;
+
+  > .title {
+    background-color: $bg-color;
+    text-align: left;
+    color: $light;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+
+  > .description {
+    background-color: $bg-color;
+    color: $light;
+    text-align: left;
+    padding: 0;
+    white-space: pre-line;
+    font-size: 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+
+    &.open {
+      max-height: 1200px;
+      padding: 25px;
+    }
+  }
+}

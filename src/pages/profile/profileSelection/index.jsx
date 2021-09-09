@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { profileUpdate, catalog } from '../../../routes/routes';
 import ProfileCard from '../../../components/profile/profileCard';
-import userData from './users.json';
+import UserContext from '../../../context/userContext';
 import './styles.scss';
 
 const ProfileSelection = () => {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    setUsers(userData);
-  }, []);
+  const [edit, setEdit] = useState(false);
+  const { users, updateCurrentUser } = useContext(UserContext);
+  const history = useHistory();
 
   const handleUserClick = user => {
-    console.log(user);
+    updateCurrentUser(user);
+    if (edit) history.push(profileUpdate);
+    else history.push(catalog);
   };
+
+  const handleUpdateUsers = () => setEdit(!edit);
 
   return (
     <section className='profile-selection'>
@@ -24,9 +28,13 @@ const ProfileSelection = () => {
             img={img}
             name={name}
             onClick={() => handleUserClick({ img, name, id })}
+            edit={edit}
           />
         ))}
       </div>
+      <button className='update-btn' onClick={handleUpdateUsers}>
+        {edit ? 'Cancelar' : 'Administrar perfiles'}
+      </button>
     </section>
   );
 };

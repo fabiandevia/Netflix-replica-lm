@@ -15,7 +15,7 @@ Input.propTypes = {
 
 export default Input;
 
-const ErrorMessage = ({ message, visible }) => {
+export const ErrorMessage = ({ message, visible }) => {
   if (!visible) return null;
 
   return <p className='error-message'>{message}</p>;

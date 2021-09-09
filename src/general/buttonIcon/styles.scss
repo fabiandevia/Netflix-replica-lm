@@ -1,0 +1,21 @@
+@import "src/theme/color";
+
+$icon-width: 3rem;
+
+.button-icon {
+  color: $light;
+  border: $light 1px solid;
+  width: $icon-width;
+  height: $icon-width;
+  border-radius: 100%;
+  line-height: 3.5rem;
+
+  &:hover {
+    background-color: $light;
+    color: $secondary;
+  }
+
+  > span {
+    font-size: 1.5rem;
+  }
+}

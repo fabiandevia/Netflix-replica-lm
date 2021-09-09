@@ -20,4 +20,15 @@
     padding: 40px 0;
     max-width: 1200px;
   }
+
+  > .update-btn {
+    color: $light;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    outline: none;
+    border: 1px $light solid;
+    cursor: pointer;
+  }
 }

@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 const InformativeSection = ({ img, title, description, align }) => (
-  <article className='informative-section'>
+  <article className={`informative-section ${align === 'left' ? 'left' : ''}`}>
     <div className='content'>
       <h1 className='title'>{title}</h1>
       <p className='description'>{description}</p>
     </div>
-    <img src={img} alt='' />
+    <img className='img' src={img} alt='' />
   </article>
 );
 

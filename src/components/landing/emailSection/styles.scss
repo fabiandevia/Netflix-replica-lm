@@ -1,0 +1,36 @@
+@import "src/theme/color";
+
+.email-section {
+  > .text {
+    font-size: 1.1rem;
+    color: $light;
+    font-weight: lighter;
+  }
+
+  > .email {
+    height: 50px;
+
+    > input {
+      font-size: 1.2rem;
+      height: 100%;
+      border: none;
+      padding: 0 20px;
+      width: 50%;
+      margin: 0;
+      outline: none;
+    }
+
+    > button {
+      background-color: $primary;
+      color: $light;
+      height: 100%;
+      padding: 0 15px;
+      border: none;
+      outline: none;
+      width: 20%;
+      font-size: 1.2rem;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+}

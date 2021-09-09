@@ -1,0 +1,22 @@
+@import "src/theme/color";
+
+.faq-section {
+  padding: 50px 0;
+
+  > .title {
+    color: $light;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+
+  > .questions {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  > .signup {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

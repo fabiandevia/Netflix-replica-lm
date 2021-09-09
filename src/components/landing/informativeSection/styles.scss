@@ -3,10 +3,40 @@
 .informative-section {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+
+  &.left {
+    flex-direction: row-reverse;
+
+    > .content {
+
+      > .img {
+        margin-right: 20px;
+      }
+    }
+  }
 
   > .content {
     > .title, > .description {
       color: $light;
+      text-align: left;
+      max-width: 400px;
     }
+
+    > .title {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    > .description {
+      font-size: 1.2rem;
+      padding-right: 10px;
+    }
+  }
+
+  > .img {
+    max-width: 380px;
+    margin-left: 30px;
   }
 }

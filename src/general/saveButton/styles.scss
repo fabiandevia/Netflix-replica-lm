@@ -1,0 +1,34 @@
+@import "src/theme/color";
+
+$default-color: lighten($tertiary, 15%);
+
+.save-button {
+  background-color: $light;
+  color: $secondary;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &.default {
+    border: $default-color 1px solid;
+    color: $default-color;
+    background-color: transparent;
+  }
+
+  &:disabled,
+  button[disabled] {
+    cursor: not-allowed;
+    background-color: transparent;
+    color: $default-color;
+  }
+}
