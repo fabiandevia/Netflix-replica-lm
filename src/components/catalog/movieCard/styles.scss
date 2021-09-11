@@ -1,0 +1,65 @@
+@import "src/theme/color";
+
+$br-radius: 6px;
+
+.movie-card {
+  background-color: $secondary;
+  transition: transform 0.2s ease-in-out;
+  border-radius: $br-radius;
+  margin: 0 10px 0 0;
+
+  &:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    transform: scale(1.25);
+
+    > .cover {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    > .options {
+      display: block;
+    }
+  }
+
+  > .cover {
+    width: 18vw;
+    border-radius: $br-radius;
+  }
+
+  > .options {
+    display: none;
+    text-align: left;
+    padding: 7px 10px 15px 10px;
+
+    > .actions {
+      display: flex;
+    }
+
+    > .classification {
+      color: $light;
+      border: $light 1px solid;
+      font-size: 0.8rem;
+      margin: 15px 2px 5px 10px;
+      display: inline-block;
+      padding: 0 7px;
+      user-select: none;
+    }
+
+    > .vote {
+      color: $success;
+      font-weight: bolder;
+      margin-left: 7px;
+    }
+
+    > .genres {
+      text-align: left;
+      color: $light;
+
+      > span {
+        margin-right: 9px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -8,3 +8,5 @@ export const PROFILE_IMAGES = [
   'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png',
   'https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb3a8833850498.56ba69ac33f26.png',
 ];
+
+export const IMAGE_SRC = 'https://image.tmdb.org/t/p/w500/';

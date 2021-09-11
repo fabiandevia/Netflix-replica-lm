@@ -1,0 +1,23 @@
+@import "../../../theme/color";
+
+.catalog-carousel {
+  width: 100vw;
+  padding: 10px 20px;
+  margin: 10px 0;
+
+  > .title {
+    color: $light;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 7px;
+  }
+
+  > .items {
+    display: flex;
+    width: 100vw;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

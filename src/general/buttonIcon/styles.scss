@@ -9,6 +9,10 @@ $icon-width: 3rem;
   height: $icon-width;
   border-radius: 100%;
   line-height: 3.5rem;
+  cursor: pointer;
+  margin-right: 7px;
+  text-align: center;
+  user-select: none;
 
   &:hover {
     background-color: $light;

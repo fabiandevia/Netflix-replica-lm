@@ -5,3 +5,5 @@ export const profileSelection = '/profile-selection';
 export const profileUpdate = '/profile-update';
 
 export const catalog = '/catalog';
+
+export const movie = (id = ':id') => `${catalog}/${id}`;
